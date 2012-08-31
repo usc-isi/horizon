@@ -12,6 +12,5 @@ horizon.egg-info
 openstack_dashboard/local/local_settings.py
 docs/build/
 docs/source/sourcecode
-.venv
 build
 dist

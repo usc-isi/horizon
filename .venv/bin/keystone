@@ -1,0 +1,10 @@
+#!/usr/bin/python
+# EASY-INSTALL-ENTRY-SCRIPT: 'python-keystoneclient==2012.2','console_scripts','keystone'
+__requires__ = 'python-keystoneclient==2012.2'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('python-keystoneclient==2012.2', 'console_scripts', 'keystone')()
+    )
