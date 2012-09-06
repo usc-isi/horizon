@@ -108,7 +108,7 @@ cp -rp .venv/* %{buildroot}%{_sysconfdir}/openstack-horizon/.venv/
 install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 
 install -D -m 644 isi/openstack-dashboard.conf %{buildroot}%{_sysconfdir}/httpd/conf.d/openstack-dashboard.conf
-install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
+#install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
 # TODO: deal with quantum sphinx complains on
 #make -C docs html PYTHONPATH=%{buildroot}%{python_sitelib}
 
@@ -142,6 +142,9 @@ install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi
 
 
 %changelog
+* Mon Jun 25 2012 Karandeep Singh <karan AT isi.edu>
+- updated with bug-fixed essex code from:
+- https://launchpad.net/horizon/essex/2012.1.1/+download/horizon-2012.1.1.tar.gz
 * Wed Jun 21 2012 Karandeep Singh <karan AT isi.edu>
 - Updated for ISI's HPC Essex release
 * Wed Jan 05 2012 Alessio Ababilov <aababilov@griddynamics.com> - 2012.1
