@@ -5,7 +5,7 @@
 %define httpd_conf /etc/httpd/conf/httpd.conf
 
 Name:           horizon
-Version:        2012.6
+Version:        2012.1.1
 #Release:	b3055
 Release:	essex
 Epoch:          1
