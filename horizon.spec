@@ -2,6 +2,7 @@
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 
 %define py_puresitedir  %{python_sitelib}
+#MK: needs to be checked
 #%define httpd_conf /etc/httpd/conf/httpd.conf
 
 Name:           horizon
@@ -22,7 +23,16 @@ Requires:       python-novaclient python-keystoneclient openstackx python-cloudf
 Requires:       python-dateutil python-eventlet >= 0.9.12 python-greenlet >= 0.3.1
 Requires:       python-sqlalchemy >= 0.6.3 python-sqlalchemy-migrate >= 0.6
 Requires:       python-httplib2
+
+#MK: needs to be checked
 Requires:       Django >= 1.3 django-nose
+#Requires:       Django >= 1.4
+Requires:       python-cinderclient >= 1.0.0
+Requires:       django-openstack-auth >= 1.0.2
+Requires:       django-compressor >= 1.2
+Requires:       python-quantumclient >= 2.0 
+Requires:       python-swiftclient >= 1.1 
+#Requires:       python-keystoneclient >= 2.7 
 
 %description
 The OpenStack Dashboard is a reference implementation of a Django site that
@@ -87,8 +97,10 @@ you can disregard this advice.
 #%__rm -rf %{buildroot}
 #KDS use /etc/openstack-horizon for installation
 install -d -m 755 %{buildroot}%{_sysconfdir}/openstack-horizon
+#MK: needs to be checked
 #install -d -m 755 %{buildroot}%{_sysconfdir}/openstack-horizon/.venv
 cp -rp * %{buildroot}%{_sysconfdir}/openstack-horizon/
+#MK: needs to be checked
 #cp -rp .venv/* %{buildroot}%{_sysconfdir}/openstack-horizon/.venv/
 #cd horizon
 
@@ -107,6 +119,7 @@ cp -rp * %{buildroot}%{_sysconfdir}/openstack-horizon/
 #install -d -m 755 %{buildroot}%{_localstatedir}/lib/openstack-dashboard
 install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 
+#MK: needs to be checked
 #install -D -m 644 isi/openstack-dashboard.conf %{buildroot}%{_sysconfdir}/httpd/conf.d/openstack-dashboard.conf
 #install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
 # TODO: deal with quantum sphinx complains on
@@ -130,8 +143,10 @@ install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 %dir %attr(0755, apache, apache) %{_localstatedir}/log/openstack-dashboard
 #%{python_sitelib}/dashboard*
 %dir %attr(0755, root, root) %{_sysconfdir}/openstack-horizon
+#MK: needs to be checked
 #%{_sysconfdir}/httpd/conf.d/*
 %{_sysconfdir}/openstack-horizon/*
+#MK: needs to be checked
 #%{_sysconfdir}/openstack-horizon/.venv/*
 #%config(noreplace) %{_sysconfdir}/openstack-horizon/openstack_dashboard/local/*py
 
