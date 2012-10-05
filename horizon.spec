@@ -8,7 +8,9 @@
 Name:           horizon
 Version:        2012.1.1
 #Release:	b3055
-Release:	essex
+#MK
+#Release:	essex
+Release: 	folsom	
 Epoch:          1
 Url:            http://www.openstack.org
 License:        Apache 2.0
