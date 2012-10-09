@@ -23,7 +23,9 @@ Group:          Development/Languages/Python
 Summary:        A Django module for OpenStack
 Requires:       python-novaclient python-keystoneclient openstackx python-cloudfiles
 Requires:       python-dateutil python-eventlet >= 0.9.12 python-greenlet >= 0.3.1
-Requires:       python-sqlalchemy >= 0.6.3 python-sqlalchemy-migrate >= 0.6
+#Requires:       python-sqlalchemy >= 0.6.3 python-sqlalchemy-migrate >= 0.6
+Requires:       python-sqlalchemy >= 0.6.3
+Requires:       python-sqlalchemy-migrate >= 0.7.1
 Requires:       python-httplib2
 
 #MK: needs to be checked
