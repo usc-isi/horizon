@@ -6,7 +6,8 @@ python-cinderclient
 python-glanceclient<2
 python-keystoneclient
 python-novaclient
-python-quantumclient>=2.0
+#python-quantumclient>=2.0
+python-quantumclient
 python-swiftclient>1.1,<2
 pytz
 
