@@ -32,7 +32,7 @@ Requires:       python-httplib2
 Requires:       Django >= 1.3 django-nose
 #Requires:       Django >= 1.4
 #Requires:       python-cinderclient >= 1.0.0
-#Requires:       python-cinderclient
+Requires:       python-cinderclient
 #Requires:       django-openstack-auth >= 1.0.2
 #Requires:       django-openstack-auth
 #Requires:       django-compressor >= 1.2
