@@ -38,7 +38,8 @@ Requires:       python-cinderclient
 #Requires:       django-compressor >= 1.2
 #Requires:       django-compressor
 #Requires:       python-quantumclient >= 2.0 
-Requires:       python-quantumclient = 1:2012.1-b3003
+#Requires:       python-quantumclient = 1:2012.1-b3003
+Requires:       python-quantumclient = 1:2012.2-folsom
 #Requires:       python-swiftclient >= 1.1 
 #Requires:       python-swiftclient 
 #Requires:       python-keystoneclient >= 2.7 
