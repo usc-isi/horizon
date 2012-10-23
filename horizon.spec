@@ -36,7 +36,7 @@ Requires:       python-cinderclient
 #Requires:       django-openstack-auth >= 1.0.2
 #Requires:       django-openstack-auth
 #Requires:       django-compressor >= 1.2
-Requires:       django-compressor
+Requires:       python-django-compressor
 #Requires:       python-quantumclient >= 2.0 
 #Requires:       python-quantumclient = 1:2012.1-b3003
 Requires:       python-quantumclient = 2012.2-folsom
