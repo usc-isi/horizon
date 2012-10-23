@@ -41,7 +41,7 @@ Requires:       python-cinderclient
 #Requires:       python-quantumclient = 1:2012.1-b3003
 Requires:       python-quantumclient = 2012.2-folsom
 #Requires:       python-swiftclient >= 1.1 
-#Requires:       python-swiftclient 
+Requires:       python-swiftclient = 2012.2-folsom
 #Requires:       python-keystoneclient >= 2.7 
 
 %description
@@ -62,7 +62,7 @@ interactions with an OpenStack cloud.
 
 There is a reference implementation that uses this module located at:
 
-    http://launchpad.net/horizon
+http://launchpad.net/horizon
 
 It is highly recommended that you make use of this reference implementation
 so that changes you make can be visualized effectively and are consistent.
