@@ -37,7 +37,8 @@ Requires:       python-cinderclient
 #Requires:       django-openstack-auth
 #Requires:       django-compressor >= 1.2
 #Requires:       django-compressor
-Requires:       python-quantumclient >= 2.0 
+#Requires:       python-quantumclient >= 2.0 
+Requires:       python-quantumclient
 #Requires:       python-swiftclient >= 1.1 
 #Requires:       python-swiftclient 
 #Requires:       python-keystoneclient >= 2.7 
