@@ -34,7 +34,7 @@ Requires:       Django >= 1.3 django-nose
 #Requires:       python-cinderclient >= 1.0.0
 Requires:       python-cinderclient
 #Requires:       django-openstack-auth >= 1.0.2
-#Requires:       django-openstack-auth
+Requires:       python-django-openstack-auth
 #Requires:       django-compressor >= 1.2
 Requires:       python-django-compressor
 #Requires:       python-quantumclient >= 2.0 
