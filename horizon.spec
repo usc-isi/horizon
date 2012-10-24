@@ -130,8 +130,8 @@ cp -rp * %{buildroot}%{_sysconfdir}/openstack-horizon/
 install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 
 #MK: needs to be checked
-#install -D -m 644 isi/openstack-dashboard.conf %{buildroot}%{_sysconfdir}/httpd/conf.d/openstack-dashboard.conf
-#install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
+install -D -m 644 isi/openstack-dashboard.conf %{buildroot}%{_sysconfdir}/httpd/conf.d/openstack-dashboard.conf
+install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
 # TODO: deal with quantum sphinx complains on
 #make -C docs html PYTHONPATH=%{buildroot}%{python_sitelib}
 
@@ -154,7 +154,7 @@ install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 #%{python_sitelib}/dashboard*
 %dir %attr(0755, root, root) %{_sysconfdir}/openstack-horizon
 #MK: needs to be checked
-#%{_sysconfdir}/httpd/conf.d/*
+%{_sysconfdir}/httpd/conf.d/*
 %{_sysconfdir}/openstack-horizon/*
 #MK: needs to be checked
 #%{_sysconfdir}/openstack-horizon/.venv/*
