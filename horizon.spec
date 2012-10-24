@@ -126,7 +126,7 @@ cp -rp * %{buildroot}%{_sysconfdir}/openstack-horizon/
 #install -m 644 redhat/local_settings.py "$DASHBOARD_CONFDIR"
 #touch "$DASHBOARD_CONFDIR"/__init__.py
 
-#install -d -m 755 %{buildroot}%{_localstatedir}/lib/openstack-dashboard
+install -d -m 755 %{buildroot}%{_localstatedir}/lib/openstack-dashboard
 install -d -m 666 %{buildroot}%{_localstatedir}/log/openstack-dashboard
 
 #MK: needs to be checked
@@ -149,7 +149,7 @@ install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi
 %files -n openstack-dashboard
 %defattr(-,root,root,-)
 #%doc openstack-dashboard/README
-#%dir %attr(0755, apache, apache) %{_localstatedir}/lib/openstack-dashboard
+%dir %attr(0755, apache, apache) %{_localstatedir}/lib/openstack-dashboard
 %dir %attr(0755, apache, apache) %{_localstatedir}/log/openstack-dashboard
 #%{python_sitelib}/dashboard*
 %dir %attr(0755, root, root) %{_sysconfdir}/openstack-horizon
