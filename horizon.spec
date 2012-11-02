@@ -137,7 +137,7 @@ install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi
 #make -C docs html PYTHONPATH=%{buildroot}%{python_sitelib}
 install -D -m 644 isi/favicon.ico %{buildroot}/var/www/html/favicon.ico
 install -d -m 755 %{buildroot}/var/www/html/auth/login
-install -D -m 644 isi/index.hml %{buildroot}/var/www/html/auth/login/index.html
+install -D -m 644 isi/index.html %{buildroot}/var/www/html/auth/login/index.html
 
 
 %clean
