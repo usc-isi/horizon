@@ -134,6 +134,7 @@ install -D -m 644 isi/openstack-dashboard.conf %{buildroot}%{_sysconfdir}/httpd/
 install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi.conf.isi
 # TODO: deal with quantum sphinx complains on
 #make -C docs html PYTHONPATH=%{buildroot}%{python_sitelib}
+install -D -m 644 isi/favicon.ico %{buildroot}/var/www/html/favicon.ico
 
 
 %clean
@@ -156,6 +157,7 @@ install -D -m 644 isi/wsgi.conf.isi %{buildroot}%{_sysconfdir}/httpd/conf.d/wsgi
 #MK: needs to be checked
 %{_sysconfdir}/httpd/conf.d/*
 %{_sysconfdir}/openstack-horizon/*
+/var/www/html/favicon.ico
 #MK: needs to be checked
 #%{_sysconfdir}/openstack-horizon/.venv/*
 #%config(noreplace) %{_sysconfdir}/openstack-horizon/openstack_dashboard/local/*py
