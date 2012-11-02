@@ -107,6 +107,7 @@ you can disregard this advice.
 #%__rm -rf %{buildroot}
 #KDS use /etc/openstack-horizon for installation
 install -d -m 755 %{buildroot}%{_sysconfdir}/openstack-horizon
+install -d -m 755 %{buildroot}%{_sysconfdir}/openstack-horizon/static
 #MK: needs to be checked
 #install -d -m 755 %{buildroot}%{_sysconfdir}/openstack-horizon/.venv
 cp -rp * %{buildroot}%{_sysconfdir}/openstack-horizon/
