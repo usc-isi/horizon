@@ -29,7 +29,8 @@ Requires:       python-sqlalchemy-migrate >= 0.7.1
 Requires:       python-httplib2
 
 #MK: needs to be checked
-Requires:       Django >= 1.3 django-nose
+#Requires:       Django >= 1.3 django-nose
+Requires:       Django >= 1.4 django-nose
 #Requires:       Django >= 1.4
 #Requires:       python-cinderclient >= 1.0.0
 Requires:       python-cinderclient
