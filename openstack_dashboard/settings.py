@@ -35,7 +35,9 @@ TEMPLATE_DEBUG = DEBUG
 
 SITE_BRANDING = 'OpenStack Dashboard'
 
-LOGIN_URL = '/auth/login/'
+LOGIN_URL = '/dashboard'
+LOGOUT_URL = '/dashboard'
+#LOGIN_URL = '/auth/login/'  # ISI
 #LOGOUT_URL = '/auth/logout/'  # ISI
 # LOGIN_REDIRECT_URL can be used as an alternative for
 # HORIZON_CONFIG.user_home, if user_home is not set.
